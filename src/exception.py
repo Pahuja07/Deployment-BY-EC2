@@ -1,6 +1,6 @@
 import os
 import sys
-
+from src.logger import logging
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
@@ -17,4 +17,14 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
-    
+ 
+
+###Errors detected during execution are called exceptions and are not unconditionally fatal:
+##you will soon learn how to handle
+
+# while True:
+#     try:
+#         x=int(input("Please enter a number: "))
+#         break
+#     except ValueError:
+#         print("Oops! That was no valid number. Try again...")
