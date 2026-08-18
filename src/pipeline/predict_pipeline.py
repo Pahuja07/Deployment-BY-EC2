@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler
 import dill
 from src.utils import load_object
 import sys
-from src.pipeline.predict_pipeline import CustomData,PredictionPipeline
 
 class PredictionPipeline:
     def __init__(self):
