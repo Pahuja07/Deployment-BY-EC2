@@ -8,4 +8,4 @@ dill
 flask
 matplotlib
 gunicorn
--e .
+# -e .
